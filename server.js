@@ -11,7 +11,7 @@ const wss = new WebSocket.Server({ server });
 
 wss.on('connection', setupWSConnection);
 
-const port = process.env.PORT || 1234;
+const port = process.env.PORT ;
 server.listen(port, () => {
   console.log(`Signaling server running on port ${port}`);
 });
